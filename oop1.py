@@ -7,3 +7,7 @@ def parse_text(file_path):
         text = file.read().lower()
     words = re.findall(r'\b\w+\b', text)  # Вилучення лише слів
     return words
+
+def count_word_frequencies(words):
+    """Підраховує частоту слів у списку."""
+    return Counter(words)
