@@ -21,3 +21,9 @@ def print_sorted_frequencies(word_counts):
     sorted_words = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)
     for word, count in sorted_words:
         print(f"{word}: {count}")
+
+if __name__ == "__main__":
+    file_path = "Доповідь фізика.docx"  # Змінити на шлях до файлу
+    words = parse_text(file_path)
+    word_counts = count_word_frequencies(words)
+    print_sorted_frequencies(word_counts)
