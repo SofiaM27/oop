@@ -15,3 +15,9 @@ def count_word_frequencies(words):
 def count_word_frequencies(words):
     """Підраховує частоту слів у списку."""
     return Counter(words)
+
+def print_sorted_frequencies(word_counts):
+    """Виводить список слів, відсортований за частотою вживання."""
+    sorted_words = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)
+    for word, count in sorted_words:
+        print(f"{word}: {count}")
