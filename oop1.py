@@ -11,3 +11,7 @@ def parse_text(file_path):
 def count_word_frequencies(words):
     """Підраховує частоту слів у списку."""
     return Counter(words)
+
+def count_word_frequencies(words):
+    """Підраховує частоту слів у списку."""
+    return Counter(words)
